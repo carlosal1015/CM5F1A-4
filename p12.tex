@@ -1,44 +1,45 @@
 \section{Pregunta N$^{\circ}$12\qquad León Alonzo Terrones Caccha}
 
 \begin{frame}
-    
-Dado el problema de valor inicial
+    \begin{enumerate}\setcounter{enumi}{11}
+        \item
 
-              \begin{equation}
+              El problema de valor inicial
+
+              \begin{equation*}
                   \begin{cases}
-                      y^\prime =\dfrac{3x-2y}{x}
-                       & \\
-                      t\in [0,0.2]
-                       & y\left(0\right)=1
+                      \diff{y}{t}=\exp\left(y\left(t\right)\right)
+                                         &
+                      t\in\left[0,0.20\right]. \\
+                      y\left(0\right)=1, &
                   \end{cases},
-              \end{equation}
-tiene solución $y(t)=1-\log(1-et)$. Aplicar el método de Adams de tercer paso.
-              
+              \end{equation*}
+              tiene solución
+              \begin{math}
+                  y\left(t\right)=
+                  1-\ln\left(1-et\right)
+              \end{math}.
+              Aplique el método de Adams-Moulton de tres pasos.
+    \end{enumerate}
 
     \begin{solution}
-
-    \begin{figure}
-        \centering
-        \includegraphics[width=8cm]{p12-Comparar-results.png}
-        %\caption{Caption}
-        \label{fig:enter-label}
-    \end{figure}
+        \begin{figure}[ht!]
+            \centering
+            \includegraphics[width=.55\paperwidth]{p12-Comparar-results.png}
+        \end{figure}
     \end{solution}
 \end{frame}
-\begin{frame}{}
-    \begin{figure}
+
+\begin{frame}
+    \begin{figure}[ht!]
         \centering
-        \includegraphics[width=8cm]{p12-Error-AM.png}
-        %\caption{Caption}
-        \label{fig:enter-label}
+        \includegraphics[width=.7\paperwidth]{p12-Error-AM.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{}
-    \begin{figure}
+\begin{frame}
+    \begin{figure}[ht!]
         \centering
-        \includegraphics[width=8cm]{p12-Comp-error.png}
-        %\caption{Caption}
-        \label{fig:enter-label}
+        \includegraphics[width=.7\paperwidth]{p12-Comp-error.png}
     \end{figure}
 \end{frame}
