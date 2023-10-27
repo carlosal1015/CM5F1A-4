@@ -19,7 +19,6 @@ yasol = np.vectorize(asol)
 h = 0.1
 t0 = 1.0
 y0 = 0.0
-
 t = np.arange(1.0, 2.0, h)
 y = np.zeros(t.size)
 y[0] = y0
