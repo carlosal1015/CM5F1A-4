@@ -85,12 +85,20 @@
   \frametitle{Método de Heun de orden 2}
   El método clásico de Heun es
   \begin{align*}
-    \overline{u_{j+1}} & = u_{j} + hf\left(x_{j},u_{j}\right).                                                               \\
-    u_{j+1}            & = u_{j}+\frac{h}{2}\left[f\left(x_{j},u_{j}\right)+f\left(t_{j+1},\overline{u_{j+1}}\right)\right], \\
+    \overline{u_{j+1}} & =
+    u_{j}+
+    hf\left(x_{j},u_{j}\right). \\
+    u_{j+1}            & =
+    u_{j}+
+    \frac{h}{2}
+    \left[
+      f\left(x_{j},u_{j}\right)+
+      f\left(t_{j+1},\overline{u_{j+1}}\right)
+      \right],
   \end{align*}
 
   donde $h$ es el tamaño de paso y $x_{j+1}=x_{j}+h$.
-  Y tiene la siguiente representación en la tabla de Butcher.
+  Y tiene la siguiente representación en la tabla de Butcher:
   % Tenemos para $m=4$, $2\times 4-1+\dfrac{4\left(4-1\right)}{2}=13$
   % parámetros, $11$ condiciones.
   \begin{equation*}

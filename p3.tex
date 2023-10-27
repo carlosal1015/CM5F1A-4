@@ -2,7 +2,7 @@
 
 \input{runge-kutta}
 
-\begin{frame}
+\begin{frame}[fragile]
     \begin{enumerate}\setcounter{enumi}{2}
         \item
 
@@ -20,9 +20,26 @@
     \end{enumerate}
 
     \begin{solution}
+        \begin{columns}
+            \begin{column}{0.38\textwidth}
+                \inputminted[fontsize=\tiny,firstline=3,lastline=4]{python}{p3.py}
+                \inputminted[fontsize=\tiny,firstline=10,lastline=11]{python}{p3.py}
+                \inputminted[fontsize=\tiny,firstline=14,lastline=15]{python}{p3.py}
+                \inputminted[fontsize=\tiny,firstline=18,lastline=21]{python}{p3.py}
+                \inputminted[fontsize=\tiny,firstline=23,lastline=25]{python}{p3.py}
+            \end{column}
+            \begin{column}{0.58\textwidth}
+                \inputminted[fontsize=\tiny,firstline=28,lastline=31]{python}{p3.py}
+            \end{column}
+        \end{columns}
+    \end{solution}
+\end{frame}
 
-        \begin{equation*}
-            .
-        \end{equation*}
+\begin{frame}
+    \begin{solution}
+        \begin{figure}[ht!]
+            \centering
+            \includegraphics[width=0.65\paperwidth]{p3}
+        \end{figure}
     \end{solution}
 \end{frame}
