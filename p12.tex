@@ -1,30 +1,44 @@
 \section{Pregunta N$^{\circ}$12\qquad León Alonzo Terrones Caccha}
 
 \begin{frame}
-    \begin{enumerate}\setcounter{enumi}{11}
-        \item
+    
+Dado el problema de valor inicial
 
-              Por medio de la integral de Romberg calcule $R_{4,4}$
-              para la integral
-              \begin{math}
-                  \displaystyle
-                  \int\limits_{0}^{\frac{\pi}{4}}
-                  x^{2}
-                  \operatorname{sen}\left(x\right)
-                  \dl x
-              \end{math}.
-    \end{enumerate}
+              \begin{equation}
+                  \begin{cases}
+                      y^\prime =\dfrac{3x-2y}{x}
+                       & \\
+                      t\in [0,0.2]
+                       & y\left(0\right)=1
+                  \end{cases},
+              \end{equation}
+tiene solución $y(t)=1-\log(1-et)$. Aplicar el método de Adams de tercer paso.
+              
 
     \begin{solution}
 
-        \begin{align*}
-            R_{1,1} & =
-            \\
-            R_{2,1} & =
-            \\
-            R_{3,1} & =
-            \\
-            R_{4,1} & =
-        \end{align*}
+    \begin{figure}
+        \centering
+        \includegraphics[width=8cm]{p12-Comparar-results.png}
+        %\caption{Caption}
+        \label{fig:enter-label}
+    \end{figure}
     \end{solution}
+\end{frame}
+\begin{frame}{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=8cm]{p12-Error-AM.png}
+        %\caption{Caption}
+        \label{fig:enter-label}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=8cm]{p12-Comp-error.png}
+        %\caption{Caption}
+        \label{fig:enter-label}
+    \end{figure}
 \end{frame}
